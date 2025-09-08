@@ -146,20 +146,20 @@
         "description": "Enter Azure Client Secret that you have created during creating the client secret"
       }
     },
-    "TenantID": {
+    "TenantID":{
       "type": "string",
       "minLength": 1,
       "metadata": {
         "description": "Enter Tenant Id of your Microsoft Entra Id"
       }
     },
-     "AzureEntraObjectID": {
-          "type": "string",
-          "minLength": 1,
-          "metadata": {
-              "description": "Enter Object id of your Microsoft Entra App"
-          }
-      },
+    "AzureEntraObjectID": {
+      "type": "string",
+      "minLength": 1,
+      "metadata": {
+        "description": "Enter Object id of your Microsoft Entra App"
+      }
+    },
     "StartTime": {
       "type": "string",
       "metadata": {
@@ -170,7 +170,10 @@
     "IncludeScoreDecrease": {
       "type": "bool",
       "defaultValue": false,
-      "allowedValues": [true, false],
+      "allowedValues": [
+          true,
+          false
+      ],
       "metadata": {
         "description": "Select true to include ingesting data for Entity Scoring when the score decreases. Default is false."
       }
@@ -181,7 +184,9 @@
       "metadata": {
         "description": "Enter name of the table used to store Audit logs. Default is 'Audits_Data'"
       },
-      "allowedValues": ["Audits_Data"]
+      "allowedValues": [
+          "Audits_Data"
+      ]
     },
     "DetectionsTableName": {
       "type": "string",
@@ -189,7 +194,9 @@
       "metadata": {
         "description": "Enter name of the table used to store Detection logs. Default is 'Detections_Data'"
       },
-      "allowedValues": ["Detections_Data"]
+      "allowedValues": [
+          "Detections_Data"
+      ]
     },
     "EntityScoringTableName": {
       "type": "string",
@@ -197,7 +204,9 @@
       "metadata": {
         "description": "Enter name of the table used to store Entity Scoring logs. Default is 'Entity_Scoring_Data'"
       },
-      "allowedValues": ["Entity_Scoring_Data"]
+      "allowedValues": [
+          "Entity_Scoring_Data"
+      ]
     },
     "LockdownTableName": {
       "type": "string",
@@ -205,7 +214,9 @@
       "metadata": {
         "description": "Enter name of the table used to store Lockdown logs. Default is 'Lockdown_Data'"
       },
-      "allowedValues": ["Lockdown_Data"]
+      "allowedValues": [
+          "Lockdown_Data"
+      ]
     },
     "HealthTableName": {
       "type": "string",
@@ -213,7 +224,9 @@
       "metadata": {
         "description": "Enter name of the table used to store Health logs. Default is 'Health_Data'"
       },
-      "allowedValues": ["Health_Data"]
+      "allowedValues": [
+          "Health_Data"
+      ]
     },
     "EntitiesTableName": {
       "type": "string",
@@ -221,14 +234,21 @@
       "metadata": {
         "description": "Enter name of the table used to store Entities logs. Default is 'Entities_Data'"
       },
-      "allowedValues": ["Entities_Data"]
+      "allowedValues": [
+          "Entities_Data"
+      ]
     },
     "LogLevel": {
       "type": "string",
       "metadata": {
         "description": "Add log level or log severity value. Default is 'INFO'"
       },
-      "allowedValues": ["Debug", "Info", "Error", "Warning"],
+      "allowedValues": [
+          "Debug",
+          "Info",
+          "Error",
+          "Warning"
+      ],
       "defaultValue": "Info"
     },
     "LockdownSchedule": {
@@ -363,159 +383,15 @@
               "type": "dynamic"
             },
             {
-              "name": "event_data_host_note",
-              "type": "dynamic"
-            },
-            {
-              "name": "event_data_host_note_text",
-              "type": "string"
-            },
-            {
-              "name": "event_data_host_note_note_id",
-              "type": "string"
-            },
-            {
-              "name": "event_data_host_note_host_id",
-              "type": "string"
-            },
-            {
-              "name": "event_data_host_note_previous_text",
-              "type": "string"
-            },
-            {
-              "name": "event_data_host_note_new_text",
-              "type": "string"
-            },
-            {
-              "name": "event_data_account_assignment",
-              "type": "dynamic"
-            },
-            {
-              "name": "event_data_account_assignment_account_id",
-              "type": "real"
-            },
-            {
-              "name": "event_data_account_assignment_outcome",
-              "type": "dynamic"
-            },
-            {
-              "name": "event_data_account_assignment_outcome_id",
-              "type": "real"
-            },
-            {
-              "name": "event_data_account_assignment_outcome_description",
-              "type": "string"
-            },
-            {
-              "name": "event_data_account_assignment_outcome_builtin",
-              "type": "boolean"
-            },
-            {
-              "name": "event_data_account_assignment_outcome_user_selectable",
-              "type": "boolean"
-            },
-            {
-              "name": "event_data_account_assignment_outcome_category",
-              "type": "string"
-            },
-            {
-              "name": "event_data_account_assignment_context",
-              "type": "dynamic"
-            },
-            {
-              "name": "event_data_account_assignment_context_entity_t_score",
-              "type": "real"
-            },
-            {
-              "name": "event_data_account_assignment_context_entity_c_score",
-              "type": "real"
-            },
-            {
-              "name": "event_data_account_assignment_context_triage_as",
-              "type": "string"
-            },
-            {
-              "name": "event_data_account_assignment_context_triaged_detection_ids",
-              "type": "dynamic"
-            },
-            {
-              "name": "event_data_account_assignment_context_fixed_detection_ids",
-              "type": "string"
-            },
-            {
-              "name": "event_data_account_assignment_context_created_rule_ids",
-              "type": "dynamic"
-            },
-            {
-              "name": "event_data_account_assignment_note",
-              "type": "string"
-            },
-            {
-              "name": "event_data_tag",
-              "type": "dynamic"
-            },
-            {
-              "name": "event_data_tag_tag_name",
-              "type": "string"
-            },
-            {
-              "name": "event_data_tag_entity",
-              "type": "string"
-            },
-            {
-              "name": "event_data_tag_entity_ids",
-              "type": "dynamic"
-            },
-            {
-              "name": "event_data_detection_note",
-              "type": "dynamic"
-            },
-            {
-              "name": "event_data_detection_note_text",
-              "type": "string"
-            },
-            {
-              "name": "event_data_detection_note_note_id",
-              "type": "real"
-            },
-            {
-              "name": "event_data_detection_note_detection_id",
-              "type": "string"
-            },
-            {
-              "name": "event_data_account_note",
-              "type": "dynamic"
-            },
-            {
-              "name": "event_data_account_note_text",
-              "type": "string"
-            },
-            {
-              "name": "event_data_account_note_note_id",
-              "type": "real"
-            },
-            {
-              "name": "event_data_account_note_account_id",
-              "type": "string"
-            },
-            {
-              "name": "event_data_account_detections",
-              "type": "dynamic"
-            },
-            {
-              "name": "event_data_account_detections_account_id",
-              "type": "string"
-            },
-            {
-              "name": "event_data_account_detections_affected_detection_ids",
-              "type": "dynamic"
-            },
-            {
               "name": "event_object",
               "type": "string"
             },
             {
               "name": "event_action",
+              "type": "string"
+            },
+            {
+              "name": "entity_type",
               "type": "string"
             },
             {
@@ -536,10 +412,6 @@
           "name": "[concat(parameters('DetectionsTableName'), '_CL')]",
           "columns": [
             {
-              "name": "id",
-              "type": "real"
-            },
-            {
               "name": "category",
               "type": "string"
             },
@@ -552,35 +424,31 @@
               "type": "real"
             },
             {
-              "name": "triaged",
-              "type": "boolean"
+              "name": "detail",
+              "type": "dynamic"
             },
             {
-              "name": "detection_type",
-              "type": "string"
+              "name": "mitre",
+              "type": "dynamic"
             },
             {
-              "name": "d_type_vname",
-              "type": "string"
+              "name": "severity",
+              "type": "real"
             },
             {
               "name": "detection_id",
               "type": "real"
             },
             {
-              "name": "detection_href",
-              "type": "string"
+              "name": "triaged",
+              "type": "boolean"
             },
             {
               "name": "entity_id",
               "type": "real"
             },
             {
-              "name": "entity_type",
-              "type": "string"
-            },
-            {
-              "name": "entity_href",
+              "name": "d_type_vname",
               "type": "string"
             },
             {
@@ -588,7 +456,11 @@
               "type": "string"
             },
             {
-              "name": "src_entity",
+              "name": "id",
+              "type": "real"
+            },
+            {
+              "name": "detection_href",
               "type": "string"
             },
             {
@@ -596,163 +468,23 @@
               "type": "datetime"
             },
             {
-              "name": "detail",
-              "type": "dynamic"
-            },
-            {
-              "name": "detail_operation",
-              "type": "string"
-            },
-            {
-              "name": "detail_target",
-              "type": "string"
-            },
-            {
-              "name": "detail_change",
-              "type": "string"
-            },
-            {
-              "name": "detail_results",
-              "type": "string"
-            },
-            {
-              "name": "detail_last_timestamp",
-              "type": "datetime"
-            },
-            {
-              "name": "detail_event_name",
-              "type": "string"
-            },
-            {
-              "name": "detail_event_id",
-              "type": "string"
-            },
-            {
-              "name": "detail_account_id",
-              "type": "string"
-            },
-            {
-              "name": "detail_src_external_host",
-              "type": "dynamic"
-            },
-            {
-              "name": "detail_src_external_host_ip",
-              "type": "string"
-            },
-            {
-              "name": "detail_src_external_host_name",
-              "type": "string"
-            },
-            {
-              "name": "detail_assumed_role",
-              "type": "string"
-            },
-            {
-              "name": "detail_access_key_id",
-              "type": "string"
-            },
-            {
-              "name": "detail_aws_region",
-              "type": "string"
-            },
-            {
-              "name": "detail_request_parameters",
-              "type": "string"
-            },
-            {
-              "name": "detail_response_elements",
-              "type": "string"
-            },
-            {
-              "name": "detail_error_code",
-              "type": "string"
-            },
-            {
-              "name": "detail_error_message",
-              "type": "string"
-            },
-            {
-              "name": "detail_role_sequence",
-              "type": "dynamic"
-            },
-            {
-              "name": "detail_user_agent",
-              "type": "string"
-            },
-            {
-              "name": "detail_identity_type",
-              "type": "string"
-            },
-            {
-              "name": "detail_target_entity",
-              "type": "string"
-            },
-            {
-              "name": "detail_num_events",
-              "type": "real"
-            },
-            {
-              "name": "detail_operation_details",
-              "type": "dynamic"
-            },
-            {
-              "name": "detail_normal_operations",
-              "type": "dynamic"
-            },
-            {
-              "name": "detail_normal_account_objects",
-              "type": "dynamic"
-            },
-            {
-              "name": "detail_user_type",
-              "type": "string"
-            },
-            {
-              "name": "detail_azure_ad_privilege",
-              "type": "dynamic"
-            },
-            {
-              "name": "detail_azure_ad_privilege_privilege",
-              "type": "real"
-            },
-            {
-              "name": "detail_azure_ad_privilege_privilegeCategory",
-              "type": "string"
-            },
-            {
-              "name": "detail_operations",
-              "type": "dynamic"
-            },
-            {
-              "name": "detail_group_field",
-              "type": "string"
-            },
-            {
-              "name": "detail_workload",
-              "type": "string"
-            },
-            {
-              "name": "detail_first_timestamp",
-              "type": "datetime"
-            },
-            {
-              "name": "severity",
-              "type": "real"
-            },
-            {
               "name": "url",
               "type": "string"
             },
             {
-              "name": "mitre",
-              "type": "dynamic"
+              "name": "entity_name",
+              "type": "string"
             },
             {
-              "name": "TimeGenerated",
-              "type": "datetime"
+              "name": "detection_type",
+              "type": "string"
             },
             {
               "name": "d_detection_details",
+              "type": "dynamic"
+            },
+            {
+              "name": "tags",
               "type": "dynamic"
             },
             {
@@ -764,12 +496,12 @@
               "type": "dynamic"
             },
             {
-              "name": "src_ip",
-              "type": "string"
-            },
-            {
               "name": "normal_domains",
               "type": "dynamic"
+            },
+            {
+              "name": "src_ip",
+              "type": "string"
             },
             {
               "name": "summary",
@@ -780,8 +512,12 @@
               "type": "dynamic"
             },
             {
-              "name": "tags",
-              "type": "dynamic"
+              "name": "entity_type",
+              "type": "string"
+            },
+            {
+              "name": "TimeGenerated",
+              "type": "datetime"
             }
           ]
         }
@@ -1498,159 +1234,15 @@
                 "type": "dynamic"
               },
               {
-                "name": "event_data_host_note",
-                "type": "dynamic"
-              },
-              {
-                "name": "event_data_host_note_text",
-                "type": "string"
-              },
-              {
-                "name": "event_data_host_note_note_id",
-                "type": "string"
-              },
-              {
-                "name": "event_data_host_note_host_id",
-                "type": "string"
-              },
-              {
-                "name": "event_data_host_note_previous_text",
-                "type": "string"
-              },
-              {
-                "name": "event_data_host_note_new_text",
-                "type": "string"
-              },
-              {
-                "name": "event_data_account_assignment",
-                "type": "dynamic"
-              },
-              {
-                "name": "event_data_account_assignment_account_id",
-                "type": "real"
-              },
-              {
-                "name": "event_data_account_assignment_outcome",
-                "type": "dynamic"
-              },
-              {
-                "name": "event_data_account_assignment_outcome_id",
-                "type": "real"
-              },
-              {
-                "name": "event_data_account_assignment_outcome_description",
-                "type": "string"
-              },
-              {
-                "name": "event_data_account_assignment_outcome_builtin",
-                "type": "boolean"
-              },
-              {
-                "name": "event_data_account_assignment_outcome_user_selectable",
-                "type": "boolean"
-              },
-              {
-                "name": "event_data_account_assignment_outcome_category",
-                "type": "string"
-              },
-              {
-                "name": "event_data_account_assignment_context",
-                "type": "dynamic"
-              },
-              {
-                "name": "event_data_account_assignment_context_entity_t_score",
-                "type": "real"
-              },
-              {
-                "name": "event_data_account_assignment_context_entity_c_score",
-                "type": "real"
-              },
-              {
-                "name": "event_data_account_assignment_context_triage_as",
-                "type": "string"
-              },
-              {
-                "name": "event_data_account_assignment_context_triaged_detection_ids",
-                "type": "dynamic"
-              },
-              {
-                "name": "event_data_account_assignment_context_fixed_detection_ids",
-                "type": "string"
-              },
-              {
-                "name": "event_data_account_assignment_context_created_rule_ids",
-                "type": "dynamic"
-              },
-              {
-                "name": "event_data_account_assignment_note",
-                "type": "string"
-              },
-              {
-                "name": "event_data_tag",
-                "type": "dynamic"
-              },
-              {
-                "name": "event_data_tag_tag_name",
-                "type": "string"
-              },
-              {
-                "name": "event_data_tag_entity",
-                "type": "string"
-              },
-              {
-                "name": "event_data_tag_entity_ids",
-                "type": "dynamic"
-              },
-              {
-                "name": "event_data_detection_note",
-                "type": "dynamic"
-              },
-              {
-                "name": "event_data_detection_note_text",
-                "type": "string"
-              },
-              {
-                "name": "event_data_detection_note_note_id",
-                "type": "real"
-              },
-              {
-                "name": "event_data_detection_note_detection_id",
-                "type": "string"
-              },
-              {
-                "name": "event_data_account_note",
-                "type": "dynamic"
-              },
-              {
-                "name": "event_data_account_note_text",
-                "type": "string"
-              },
-              {
-                "name": "event_data_account_note_note_id",
-                "type": "real"
-              },
-              {
-                "name": "event_data_account_note_account_id",
-                "type": "string"
-              },
-              {
-                "name": "event_data_account_detections",
-                "type": "dynamic"
-              },
-              {
-                "name": "event_data_account_detections_account_id",
-                "type": "string"
-              },
-              {
-                "name": "event_data_account_detections_affected_detection_ids",
-                "type": "dynamic"
-              },
-              {
                 "name": "event_object",
                 "type": "string"
               },
               {
                 "name": "event_action",
+                "type": "string"
+              },
+              {
+                "name": "entity_type",
                 "type": "string"
               },
               {
@@ -1661,10 +1253,6 @@
           },
           "[concat('Custom-', parameters('DetectionsTableName'))]": {
             "columns": [
-              {
-                "name": "id",
-                "type": "real"
-              },
               {
                 "name": "category",
                 "type": "string"
@@ -1678,35 +1266,31 @@
                 "type": "real"
               },
               {
-                "name": "triaged",
-                "type": "boolean"
+                "name": "detail",
+                "type": "dynamic"
               },
               {
-                "name": "detection_type",
-                "type": "string"
+                "name": "mitre",
+                "type": "dynamic"
               },
               {
-                "name": "d_type_vname",
-                "type": "string"
+                "name": "severity",
+                "type": "real"
               },
               {
                 "name": "detection_id",
                 "type": "real"
               },
               {
-                "name": "detection_href",
-                "type": "string"
+                "name": "triaged",
+                "type": "boolean"
               },
               {
                 "name": "entity_id",
                 "type": "real"
               },
               {
-                "name": "entity_type",
-                "type": "string"
-              },
-              {
-                "name": "entity_href",
+                "name": "d_type_vname",
                 "type": "string"
               },
               {
@@ -1714,7 +1298,11 @@
                 "type": "string"
               },
               {
-                "name": "src_entity",
+                "name": "id",
+                "type": "real"
+              },
+              {
+                "name": "detection_href",
                 "type": "string"
               },
               {
@@ -1722,163 +1310,23 @@
                 "type": "datetime"
               },
               {
-                "name": "detail",
-                "type": "dynamic"
-              },
-              {
-                "name": "detail_operation",
-                "type": "string"
-              },
-              {
-                "name": "detail_target",
-                "type": "string"
-              },
-              {
-                "name": "detail_change",
-                "type": "string"
-              },
-              {
-                "name": "detail_results",
-                "type": "string"
-              },
-              {
-                "name": "detail_last_timestamp",
-                "type": "datetime"
-              },
-              {
-                "name": "detail_event_name",
-                "type": "string"
-              },
-              {
-                "name": "detail_event_id",
-                "type": "string"
-              },
-              {
-                "name": "detail_account_id",
-                "type": "string"
-              },
-              {
-                "name": "detail_src_external_host",
-                "type": "dynamic"
-              },
-              {
-                "name": "detail_src_external_host_ip",
-                "type": "string"
-              },
-              {
-                "name": "detail_src_external_host_name",
-                "type": "string"
-              },
-              {
-                "name": "detail_assumed_role",
-                "type": "string"
-              },
-              {
-                "name": "detail_access_key_id",
-                "type": "string"
-              },
-              {
-                "name": "detail_aws_region",
-                "type": "string"
-              },
-              {
-                "name": "detail_request_parameters",
-                "type": "string"
-              },
-              {
-                "name": "detail_response_elements",
-                "type": "string"
-              },
-              {
-                "name": "detail_error_code",
-                "type": "string"
-              },
-              {
-                "name": "detail_error_message",
-                "type": "string"
-              },
-              {
-                "name": "detail_role_sequence",
-                "type": "dynamic"
-              },
-              {
-                "name": "detail_user_agent",
-                "type": "string"
-              },
-              {
-                "name": "detail_identity_type",
-                "type": "string"
-              },
-              {
-                "name": "detail_target_entity",
-                "type": "string"
-              },
-              {
-                "name": "detail_num_events",
-                "type": "real"
-              },
-              {
-                "name": "detail_operation_details",
-                "type": "dynamic"
-              },
-              {
-                "name": "detail_normal_operations",
-                "type": "dynamic"
-              },
-              {
-                "name": "detail_normal_account_objects",
-                "type": "dynamic"
-              },
-              {
-                "name": "detail_user_type",
-                "type": "string"
-              },
-              {
-                "name": "detail_azure_ad_privilege",
-                "type": "dynamic"
-              },
-              {
-                "name": "detail_azure_ad_privilege_privilege",
-                "type": "real"
-              },
-              {
-                "name": "detail_azure_ad_privilege_privilegeCategory",
-                "type": "string"
-              },
-              {
-                "name": "detail_operations",
-                "type": "dynamic"
-              },
-              {
-                "name": "detail_group_field",
-                "type": "string"
-              },
-              {
-                "name": "detail_workload",
-                "type": "string"
-              },
-              {
-                "name": "detail_first_timestamp",
-                "type": "datetime"
-              },
-              {
-                "name": "severity",
-                "type": "real"
-              },
-              {
                 "name": "url",
                 "type": "string"
               },
               {
-                "name": "mitre",
-                "type": "dynamic"
+                "name": "entity_name",
+                "type": "string"
               },
               {
-                "name": "TimeGenerated",
-                "type": "datetime"
+                "name": "detection_type",
+                "type": "string"
               },
               {
                 "name": "d_detection_details",
+                "type": "dynamic"
+              },
+              {
+                "name": "tags",
                 "type": "dynamic"
               },
               {
@@ -1890,12 +1338,12 @@
                 "type": "dynamic"
               },
               {
-                "name": "src_ip",
-                "type": "string"
-              },
-              {
                 "name": "normal_domains",
                 "type": "dynamic"
+              },
+              {
+                "name": "src_ip",
+                "type": "string"
               },
               {
                 "name": "summary",
@@ -1906,8 +1354,12 @@
                 "type": "dynamic"
               },
               {
-                "name": "tags",
-                "type": "dynamic"
+                "name": "entity_type",
+                "type": "string"
+              },
+              {
+                "name": "TimeGenerated",
+                "type": "datetime"
               }
             ]
           },
@@ -2532,7 +1984,7 @@
           {
             "streams": ["[concat('Custom-', parameters('AuditsTableName'))]"],
             "destinations": ["[concat('RuleDest', variables('suffix'))]"],
-            "transformKql": "source\n| extend TimeGenerated = todatetime(now()), json_event_data = parse_json(event_data)\n| extend json_event_data_host_note = parse_json(json_event_data.host_note), json_event_data_account_assignment = parse_json(json_event_data.account_assignment), json_event_data_tag = parse_json(json_event_data.tag), json_event_data_detection_note = parse_json(json_event_data.detection_note), json_event_data_account_note = parse_json(json_event_data.account_note), json_event_data_account_detections = parse_json(json_event_data.account_detections)\n| extend json_event_data_account_assignment_outcome = parse_json(json_event_data_account_assignment.outcome), json_event_data_account_assignment_context = parse_json(json_event_data_account_assignment.context)\n| extend event_data_host_note_text = tostring(json_event_data_host_note.text), event_data_host_note_note_id = tostring(json_event_data_host_note.note_id), event_data_host_note_host_id = tostring(json_event_data_host_note.host_id), event_data_host_note_previous_text = tostring(json_event_data_host_note.previous_text), event_data_host_note_new_text = tostring(json_event_data_host_note.new_text), event_data_account_assignment_account_id = toreal(json_event_data_account_assignment.account_id), event_data_account_assignment_outcome_id = toreal(json_event_data_account_assignment_outcome.id), event_data_account_assignment_outcome_description = tostring(json_event_data_account_assignment_outcome.description), event_data_account_assignment_outcome_builtin = tobool(json_event_data_account_assignment_outcome.builtin), event_data_account_assignment_outcome_user_selectable = tobool(json_event_data_account_assignment_outcome.user_selectable), event_data_account_assignment_outcome_category = tostring(json_event_data_account_assignment_outcome.category), event_data_account_assignment_context_entity_t_score = toreal(json_event_data_account_assignment_context.entity_t_score), event_data_account_assignment_context_entity_c_score = toreal(json_event_data_account_assignment_context.entity_c_score), event_data_account_assignment_context_triage_as = tostring(json_event_data_account_assignment_context.triage_as), event_data_account_assignment_context_triaged_detection_ids = todynamic(json_event_data_account_assignment_context.triaged_detection_ids), event_data_account_assignment_context_fixed_detection_ids = tostring(json_event_data_account_assignment_context.fixed_detection_ids), event_data_account_assignment_context_created_rule_ids = todynamic(json_event_data_account_assignment_context.created_rule_ids), event_data_account_assignment_note = tostring(json_event_data_account_assignment.note), event_data_tag_tag_name = tostring(json_event_data_tag.tag_name), event_data_tag_entity = tostring(json_event_data_tag.entity), event_data_tag_entity_ids = todynamic(json_event_data_tag.entity_ids), event_data_detection_note_text = tostring(json_event_data_detection_note.text), event_data_detection_note_note_id = toreal(json_event_data_detection_note.note_id), event_data_detection_note_detection_id = tostring(json_event_data_detection_note.detection_id), event_data_account_note_text = tostring(json_event_data_account_note.text), event_data_account_note_note_id = toreal(json_event_data_account_note.note_id), event_data_account_note_account_id = tostring(json_event_data_account_note.account_id), event_data_account_detections_account_id = tostring(json_event_data_account_detections.account_id), event_data_account_detections_affected_detection_ids = todynamic(json_event_data_account_detections.affected_detection_ids)\n| project-away json_event_data, event_data, json_event_data_host_note, event_data_host_note, json_event_data_account_assignment, event_data_account_assignment, json_event_data_account_assignment_outcome, event_data_account_assignment_outcome, json_event_data_account_assignment_context, event_data_account_assignment_context, json_event_data_tag, event_data_tag, json_event_data_detection_note, event_data_detection_note, json_event_data_account_note, event_data_account_note, json_event_data_account_detections, event_data_account_detections",
+            "transformKql": "source\n| extend TimeGenerated = todatetime(now())",
             "outputStream": "[concat('Custom-', parameters('AuditsTableName'), '_CL')]"
           },
           {
@@ -2540,7 +1992,7 @@
               "[concat('Custom-', parameters('DetectionsTableName'))]"
             ],
             "destinations": ["[concat('RuleDest', variables('suffix'))]"],
-            "transformKql": "source\n| extend TimeGenerated = todatetime(now()), json_detail = parse_json(detail)\n| extend json_detail_src_external_host = parse_json(json_detail.src_external_host)\n| extend detail_event_name = tostring(json_detail.event_name), detail_event_id = tostring(json_detail.event_id), detail_account_id = tostring(json_detail.account_id), detail_src_external_host_ip = tostring(json_detail_src_external_host.ip), detail_src_external_host_name = tostring(json_detail_src_external_host.name), detail_assumed_role = tostring(json_detail.assumed_role), detail_access_key_id = tostring(json_detail.access_key_id), detail_aws_region = tostring(json_detail.aws_region), detail_request_parameters = tostring(json_detail.request_parameters), detail_response_elements = tostring(json_detail.response_elements), detail_error_code = tostring(json_detail.error_code), detail_error_message = tostring(json_detail.error_message), detail_role_sequence = todynamic(json_detail.role_sequence), detail_user_agent = tostring(json_detail.user_agent), detail_identity_type = tostring(json_detail.identity_type), detail_last_timestamp = todatetime(json_detail.last_timestamp)\n| project-away json_detail, detail, json_detail_src_external_host, detail_src_external_host",
+            "transformKql": "source\n| extend TimeGenerated = todatetime(now())",
             "outputStream": "[concat('Custom-', parameters('DetectionsTableName'), '_CL')]"
           },
           {
