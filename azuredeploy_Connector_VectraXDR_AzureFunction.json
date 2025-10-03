@@ -238,6 +238,17 @@
           "Entities_Data"
       ]
     },
+        "ExcludeGroupDetailsFromDetections": {
+            "type": "bool",
+            "defaultValue": false,
+            "allowedValues": [
+                true,
+                false
+            ],
+            "metadata": {
+                "description": "Select true to exclude group details from detections. Default is false."
+            }
+        },
     "LogLevel": {
       "type": "string",
       "metadata": {
@@ -2206,6 +2217,7 @@
             "Lockdown_Table_Name": "[parameters('LockdownTableName')]",
             "Health_Table_Name": "[parameters('HealthTableName')]",
             "Entities_Table_Name": "[parameters('EntitiesTableName')]",
+            "ExcludeGroupDetailsFromDetections": "[parameters('ExcludeGroupDetailsFromDetections')]",
             "LogLevel": "[parameters('LogLevel')]",
             "DetectionsSchedule": "[parameters('DetectionsSchedule')]",
             "AuditsSchedule": "[parameters('AuditsSchedule')]",
@@ -2224,7 +2236,7 @@
             "AZURE_DATA_COLLECTION_ENDPOINT": "[reference(resourceId('Microsoft.Insights/dataCollectionEndpoints', variables('endpointName'))).logsIngestion.endpoint]",
             "DCR_RULE_ID": "[reference(resourceId('Microsoft.Insights/dataCollectionRules', variables('dataRuleName'))).immutableId]",
             "SCOPE": "[variables('scope')]",
-            "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/fenil-savani/Data-Connectors/raw/refs/heads/main/VectraXDR321.zip"
+            "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/fenil-savani/Data-Connectors/raw/refs/heads/main/VectraXDRTestIngestion.zip"
           }
         }
       ]
