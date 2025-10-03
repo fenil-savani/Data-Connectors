@@ -8,14 +8,14 @@ apiVersion: 2023-12-01-preview
 properties:
   displayName: Defender Alert Evidence
   description: This analytic rule is looking for new alert evidence from Microsoft Defender for Endpoint. The intent is to create entries in the SecurityAlert table for every new alert evidence attached to an entity of type Device or User monitored by Defender for Endpoint.
-  query: |-
+  query: |
     AlertEvidence
     | where EntityType in ("Device", "User")
-  queryFrequency: 30m
-  queryPeriod: 30m
+  queryFrequency: 10m
+  queryPeriod: 10m
   triggerOperator: GreaterThan
   triggerThreshold: 0
-  suppressionDuration: PT5H
+  suppressionDuration: PT1H
   suppressionEnabled: false
   incidentConfiguration:
     createIncident: false
@@ -26,8 +26,6 @@ properties:
       matchingMethod: AllEntities
   eventGroupingSettings:
     aggregationKind: SingleAlert
-  alertDetailsOverride: 
-  customDetails: {}
   entityMappings:
   - entityType: Account
     fieldMappings:
@@ -41,5 +39,3 @@ properties:
     fieldMappings:
     - identifier: HostName
       columnName: DeviceName
-  sentinelEntitiesMappings: 
-  templateVersion: 
