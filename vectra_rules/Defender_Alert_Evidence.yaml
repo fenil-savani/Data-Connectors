@@ -11,8 +11,8 @@ properties:
   query: |-
     AlertEvidence
     | where EntityType in ("Device", "User")
-  queryFrequency: 60m
-  queryPeriod: 60m
+  queryFrequency: 30m
+  queryPeriod: 30m
   triggerOperator: GreaterThan
   triggerThreshold: 0
   suppressionDuration: PT5H
