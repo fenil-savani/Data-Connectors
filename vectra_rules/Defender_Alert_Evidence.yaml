@@ -22,7 +22,7 @@ properties:
     groupingConfiguration:
       enabled: false
       reopenClosedIncident: false
-      lookbackDuration: PT5H
+      lookbackDuration: P7D
       matchingMethod: AllEntities
   eventGroupingSettings:
     aggregationKind: SingleAlert
