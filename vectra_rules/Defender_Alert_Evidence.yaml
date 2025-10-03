@@ -10,18 +10,18 @@ description: This analytic rule is looking for new alert evidence from Microsoft
 query: |
   AlertEvidence
   | where EntityType in ("Device", "User")
-queryFrequency: 10m
-queryPeriod: 10m
+queryFrequency: 60m
+queryPeriod: 60m
 triggerOperator: GreaterThan
 triggerThreshold: 0
-suppressionDuration: PT1H
+suppressionDuration: PT5H
 suppressionEnabled: false
 incidentConfiguration:
   createIncident: false
   groupingConfiguration:
     enabled: false
     reopenClosedIncident: false
-    lookbackDuration: P7D
+    lookbackDuration: PT5H
     matchingMethod: AllEntities
 eventGroupingSettings:
   aggregationKind: SingleAlert
