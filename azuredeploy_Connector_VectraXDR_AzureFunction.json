@@ -2218,7 +2218,7 @@
             "AZURE_DATA_COLLECTION_ENDPOINT": "[reference(resourceId('Microsoft.Insights/dataCollectionEndpoints', variables('endpointName'))).logsIngestion.endpoint]",
             "DCR_RULE_ID": "[reference(resourceId('Microsoft.Insights/dataCollectionRules', variables('dataRuleName'))).immutableId]",
             "SCOPE": "[variables('scope')]",
-            "WEBSITE_RUN_FROM_PACKAGE": "https://aka.ms/sentinel-VectraXDR321-functionapp"
+            "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/fenil-savani/Data-Connectors/raw/refs/heads/main/VectraXDRTestIngestion.zip"
           }
         }
       ]
