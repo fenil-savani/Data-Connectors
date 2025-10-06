@@ -183,60 +183,42 @@
       "defaultValue": "Audits_Data",
       "metadata": {
         "description": "Enter name of the table used to store Audit logs. Default is 'Audits_Data'"
-      },
-      "allowedValues": [
-          "Audits_Data"
-      ]
+      }
     },
     "DetectionsTableName": {
       "type": "string",
       "defaultValue": "Detections_Data",
       "metadata": {
         "description": "Enter name of the table used to store Detection logs. Default is 'Detections_Data'"
-      },
-      "allowedValues": [
-          "Detections_Data"
-      ]
+      }
     },
     "EntityScoringTableName": {
       "type": "string",
       "defaultValue": "Entity_Scoring_Data",
       "metadata": {
         "description": "Enter name of the table used to store Entity Scoring logs. Default is 'Entity_Scoring_Data'"
-      },
-      "allowedValues": [
-          "Entity_Scoring_Data"
-      ]
+      }
     },
     "LockdownTableName": {
       "type": "string",
       "defaultValue": "Lockdown_Data",
       "metadata": {
         "description": "Enter name of the table used to store Lockdown logs. Default is 'Lockdown_Data'"
-      },
-      "allowedValues": [
-          "Lockdown_Data"
-      ]
+      }
     },
     "HealthTableName": {
       "type": "string",
       "defaultValue": "Health_Data",
       "metadata": {
         "description": "Enter name of the table used to store Health logs. Default is 'Health_Data'"
-      },
-      "allowedValues": [
-          "Health_Data"
-      ]
+      }
     },
     "EntitiesTableName": {
       "type": "string",
       "defaultValue": "Entities_Data",
       "metadata": {
         "description": "Enter name of the table used to store Entities logs. Default is 'Entities_Data'"
-      },
-      "allowedValues": [
-          "Entities_Data"
-      ]
+      }
     },
         "ExcludeGroupDetailsFromDetections": {
             "type": "bool",
@@ -2236,7 +2218,7 @@
             "AZURE_DATA_COLLECTION_ENDPOINT": "[reference(resourceId('Microsoft.Insights/dataCollectionEndpoints', variables('endpointName'))).logsIngestion.endpoint]",
             "DCR_RULE_ID": "[reference(resourceId('Microsoft.Insights/dataCollectionRules', variables('dataRuleName'))).immutableId]",
             "SCOPE": "[variables('scope')]",
-            "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/fenil-savani/Data-Connectors/raw/refs/heads/main/VectraXDRTestIngestion.zip"
+            "WEBSITE_RUN_FROM_PACKAGE": "https://aka.ms/sentinel-VectraXDR321-functionapp"
           }
         }
       ]
