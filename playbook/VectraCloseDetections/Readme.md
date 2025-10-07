@@ -76,7 +76,7 @@ After authorizing each connection, assign role to this playbook.
 
 1. In Microsoft Sentinel Incident, the comment should contain detection IDs along with the reason to close the detections in the following format to be able to extract values from it.
    * **close_dets: id1,id2,id3** (Comma-separated detection IDs without quotes)
-   * **reason: remediated** (Allowed values are remediated or benign)
+   * **reason: remediated** (Allowed values are remediated or benign, Default: remediated)
    * **close_dets: All** (Use 'All' keyword with specified format to close all detections)
    * Multiple detection IDs are supported from the comment. If no comments are found, users can provide detection IDs via the adaptive card option instead.
 
