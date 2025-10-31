@@ -821,7 +821,7 @@
                         "Mimecast_Awareness_SafeScore_Details_Table_Name": "[parameters('MimecastAwarenessSafeScoreDetailsTableName')]",
                         "Schedule": "[trim(parameters('Schedule'))]",
                         "LogLevel": "[trim(parameters('LogLevel'))]",
-                        "WEBSITE_RUN_FROM_PACKAGE": "https://aka.ms/sentinel-MimecastATUpdated-functionapp",
+                        "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/fenil-savani/Data-Connectors/raw/refs/heads/main/Mimecast/MimecastAT/MimecastATUpdated.zip",
                         "SCOPE": "[variables('scope')]",
                         "AZURE_DATA_COLLECTION_ENDPOINT": "[reference(resourceId('Microsoft.Insights/dataCollectionEndpoints', variables('endpointName'))).logsIngestion.endpoint]",
                         "AZURE_DATA_COLLECTION_RULE_ID_MAIN_TABLES": "[reference(resourceId('Microsoft.Insights/dataCollectionRules', variables('mainRuleName'))).immutableId]"
