@@ -506,7 +506,7 @@
                         "Schedule": "[trim(parameters('Schedule'))]",
                         "LogLevel": "[trim(parameters('LogLevel'))]",
                         "Connection_String": "[concat('DefaultEndpointsProtocol=https;AccountName=', toLower(variables('FunctionName')),';AccountKey=',listKeys(resourceId('Microsoft.Storage/storageAccounts', toLower(variables('FunctionName'))), '2019-06-01').keys[0].value, ';EndpointSuffix=',toLower(variables('StorageSuffix')))]",
-                        "WEBSITE_RUN_FROM_PACKAGE": "https://aka.ms/sentinel-MimecastCI_Updated-functionapp",
+                        "WEBSITE_RUN_FROM_PACKAGE": "https://github.com/fenil-savani/Data-Connectors/raw/refs/heads/main/Mimecast/MimecastCloudIntegrated/Mimecast_CI_Updated.zip",
                         "SCOPE": "[variables('scope')]",
                         "AZURE_DATA_COLLECTION_ENDPOINT": "[reference(resourceId('Microsoft.Insights/dataCollectionEndpoints', variables('endpointName'))).logsIngestion.endpoint]",
                         "AZURE_DATA_COLLECTION_RULE_ID_MAIN_TABLES": "[reference(resourceId('Microsoft.Insights/dataCollectionRules', variables('mainRuleName'))).immutableId]"
