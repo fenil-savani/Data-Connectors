@@ -41,7 +41,7 @@
     "email": "tme@vetcra.ai",
     "_email": "[variables('email')]",
     "_solutionName": "Vectra XDR",
-    "_solutionVersion": "3.2.2",
+    "_solutionVersion": "3.3.0",
     "solutionId": "vectraaiinc.vectra-xdr-for-microsoft-sentinel",
     "_solutionId": "[variables('solutionId')]",
     "uiConfigId1": "VectraXDR",
@@ -90,31 +90,31 @@
     },
     "analyticRuleObject1": {
       "analyticRuleVersion1": "1.1.0",
-      "_analyticRulecontentId1": "36395eb8-2f91-48af-b7be-d84bfc0bfb43",
-      "analyticRuleId1": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', '36395eb8-2f91-48af-b7be-d84bfc0bfb43')]",
-      "analyticRuleTemplateSpecName1": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-ar-',uniquestring('36395eb8-2f91-48af-b7be-d84bfc0bfb43')))]",
-      "_analyticRulecontentProductId1": "[concat(take(variables('_solutionId'),50),'-','ar','-', uniqueString(concat(variables('_solutionId'),'-','AnalyticsRule','-','36395eb8-2f91-48af-b7be-d84bfc0bfb43','-', '1.1.0')))]"
+      "_analyticRulecontentId1": "87325835-dd8c-41e7-b686-fd5adbbd0aee",
+      "analyticRuleId1": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', '87325835-dd8c-41e7-b686-fd5adbbd0aee')]",
+      "analyticRuleTemplateSpecName1": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-ar-',uniquestring('87325835-dd8c-41e7-b686-fd5adbbd0aee')))]",
+      "_analyticRulecontentProductId1": "[concat(take(variables('_solutionId'),50),'-','ar','-', uniqueString(concat(variables('_solutionId'),'-','AnalyticsRule','-','87325835-dd8c-41e7-b686-fd5adbbd0aee','-', '1.1.0')))]"
     },
     "analyticRuleObject2": {
       "analyticRuleVersion2": "1.1.0",
-      "_analyticRulecontentId2": "31bb43b5-b886-457a-a816-c8351407eb54",
-      "analyticRuleId2": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', '31bb43b5-b886-457a-a816-c8351407eb54')]",
-      "analyticRuleTemplateSpecName2": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-ar-',uniquestring('31bb43b5-b886-457a-a816-c8351407eb54')))]",
-      "_analyticRulecontentProductId2": "[concat(take(variables('_solutionId'),50),'-','ar','-', uniqueString(concat(variables('_solutionId'),'-','AnalyticsRule','-','31bb43b5-b886-457a-a816-c8351407eb54','-', '1.1.0')))]"
+      "_analyticRulecontentId2": "8b7a1a64-8ef2-4000-b8c9-9bca3b93aace",
+      "analyticRuleId2": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', '8b7a1a64-8ef2-4000-b8c9-9bca3b93aace')]",
+      "analyticRuleTemplateSpecName2": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-ar-',uniquestring('8b7a1a64-8ef2-4000-b8c9-9bca3b93aace')))]",
+      "_analyticRulecontentProductId2": "[concat(take(variables('_solutionId'),50),'-','ar','-', uniqueString(concat(variables('_solutionId'),'-','AnalyticsRule','-','8b7a1a64-8ef2-4000-b8c9-9bca3b93aace','-', '1.1.0')))]"
     },
     "analyticRuleObject3": {
       "analyticRuleVersion3": "1.1.1",
-      "_analyticRulecontentId3": "b1f9e261-130f-4227-8bba-8f892797393a",
-      "analyticRuleId3": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', 'b1f9e261-130f-4227-8bba-8f892797393a')]",
-      "analyticRuleTemplateSpecName3": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-ar-',uniquestring('b1f9e261-130f-4227-8bba-8f892797393a')))]",
-      "_analyticRulecontentProductId3": "[concat(take(variables('_solutionId'),50),'-','ar','-', uniqueString(concat(variables('_solutionId'),'-','AnalyticsRule','-','b1f9e261-130f-4227-8bba-8f892797393a','-', '1.1.1')))]"
+      "_analyticRulecontentId3": "9b51b0fb-0419-4450-9ea0-0a48751c4902",
+      "analyticRuleId3": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', '9b51b0fb-0419-4450-9ea0-0a48751c4902')]",
+      "analyticRuleTemplateSpecName3": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-ar-',uniquestring('9b51b0fb-0419-4450-9ea0-0a48751c4902')))]",
+      "_analyticRulecontentProductId3": "[concat(take(variables('_solutionId'),50),'-','ar','-', uniqueString(concat(variables('_solutionId'),'-','AnalyticsRule','-','9b51b0fb-0419-4450-9ea0-0a48751c4902','-', '1.1.1')))]"
     },
     "analyticRuleObject4": {
       "analyticRuleVersion4": "1.1.1",
-      "_analyticRulecontentId4": "230d7216-0325-426e-bedd-f7f44096b17b",
-      "analyticRuleId4": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', '230d7216-0325-426e-bedd-f7f44096b17b')]",
-      "analyticRuleTemplateSpecName4": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-ar-',uniquestring('230d7216-0325-426e-bedd-f7f44096b17b')))]",
-      "_analyticRulecontentProductId4": "[concat(take(variables('_solutionId'),50),'-','ar','-', uniqueString(concat(variables('_solutionId'),'-','AnalyticsRule','-','230d7216-0325-426e-bedd-f7f44096b17b','-', '1.1.1')))]"
+      "_analyticRulecontentId4": "af6f2812-0187-4cc9-822a-952f8b5b6b7e",
+      "analyticRuleId4": "[resourceId('Microsoft.SecurityInsights/AlertRuleTemplates', 'af6f2812-0187-4cc9-822a-952f8b5b6b7e')]",
+      "analyticRuleTemplateSpecName4": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-ar-',uniquestring('af6f2812-0187-4cc9-822a-952f8b5b6b7e')))]",
+      "_analyticRulecontentProductId4": "[concat(take(variables('_solutionId'),50),'-','ar','-', uniqueString(concat(variables('_solutionId'),'-','AnalyticsRule','-','af6f2812-0187-4cc9-822a-952f8b5b6b7e','-', '1.1.1')))]"
     },
     "analyticRuleObject5": {
       "analyticRuleVersion5": "1.0.1",
@@ -306,7 +306,11 @@
     "playbookId20": "[resourceId('Microsoft.Logic/workflows', variables('playbookContentId20'))]",
     "playbookTemplateSpecName20": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/',concat(parameters('workspace'),'-pl-',uniquestring(variables('_playbookContentId20'))))]",
     "_playbookcontentProductId20": "[concat(take(variables('_solutionId'),50),'-','pl','-', uniqueString(concat(variables('_solutionId'),'-','Playbook','-',variables('_playbookContentId20'),'-', variables('playbookVersion20'))))]",
-    "_solutioncontentProductId": "[concat(take(variables('_solutionId'),50),'-','sl','-', uniqueString(concat(variables('_solutionId'),'-','Solution','-',variables('_solutionId'),'-', variables('_solutionVersion'))))]"
+    "_solutioncontentProductId": "[concat(take(variables('_solutionId'),50),'-','sl','-', uniqueString(concat(variables('_solutionId'),'-','Solution','-',variables('_solutionId'),'-', variables('_solutionVersion'))))]",
+    "id": "id",
+    "_id": "[variables('id')]",
+    "entityid": "entity_id",
+    "_entity_id": "[variables('entityid')]"
   },
   "resources": [
     {
@@ -318,7 +322,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "Vectra XDR data connector with template version 3.2.2",
+        "description": "Vectra XDR data connector with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('dataConnectorVersion1')]",
@@ -518,36 +522,19 @@
                       "description": "**STEP 3 - Add a client secret for application in Microsoft Entra ID**\n\n Sometimes called an application password, a client secret is a string value required for the execution of Vectra Data Connector. Follow the steps in this section to create a new Client Secret:\n 1. In the Azure portal, in **App registrations**, select your application.\n 2. Select **Certificates & secrets > Client secrets > New client secret**.\n 3. Add a description for your client secret.\n 4. Select an expiration for the secret or specify a custom lifetime. Limit is 24 months.\n 5. Select **Add**. \n 6. *Record the secret's value for use in your client application code. This secret value is never displayed again after you leave this page.* The secret value is required as configuration parameter for the execution of Vectra Data Connector. \n\n> **Reference link:** [https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret](https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret)"
                     },
                     {
-                      "description": "**STEP 4 - Assign role of Contributor to application in Microsoft Entra ID**\n\n Follow the steps in this section to assign the role:\n 1. In the Azure portal, Go to **Resource Group** and select your resource group.\n 2. Go to **Access control (IAM)** from left panel.\n 3. Click on **Add**, and then select **Add role assignment**.\n 4. Select **Contributor** as role and click on next.\n 5. In **Assign access to**, select `User, group, or service principal`.\n 6. Click on **add members** and type **your app name** that you have created and select it.\n 7. Now click on **Review + assign** and then again click on **Review + assign**. \n\n> **Reference link:** [https://learn.microsoft.com/azure/role-based-access-control/role-assignments-portal](https://learn.microsoft.com/azure/role-based-access-control/role-assignments-portal)"
+                      "description": "**STEP 4 - Get Object ID of your application in Microsoft Entra ID**\n\n After creating your app registration, follow the steps in this section to get Object ID:\n 1. Go to **Microsoft Entra ID**.\n 2. Select **Enterprise applications** from the left menu.\n 3. Find your newly created application in the list (you can search by the name you provided).\n 4. Click on the application.\n 5. On the overview page, copy the **Object ID**. This is the **AzureEntraObjectId** needed for your ARM template role assignment.\n"
                     },
                     {
-                      "description": "**STEP 5 - Create a Keyvault**\n\n Follow these instructions to create a new Keyvault.\n 1. In the Azure portal, Go to **Key vaults** and click on Create.\n 2. Select Subsciption, Resource Group and provide unique name of keyvault."
+                      "description": "**STEP 5 - Assign role of Contributor to application in Microsoft Entra ID**\n\n Follow the steps in this section to assign the role:\n 1. In the Azure portal, Go to **Resource Group** and select your resource group.\n 2. Go to **Access control (IAM)** from left panel.\n 3. Click on **Add**, and then select **Add role assignment**.\n 4. Select **Contributor** as role and click on next.\n 5. In **Assign access to**, select `User, group, or service principal`.\n 6. Click on **add members** and type **your app name** that you have created and select it.\n 7. Now click on **Review + assign** and then again click on **Review + assign**. \n\n> **Reference link:** [https://learn.microsoft.com/azure/role-based-access-control/role-assignments-portal](https://learn.microsoft.com/azure/role-based-access-control/role-assignments-portal)"
                     },
                     {
-                      "description": "**STEP 6 - Create Access Policy in Keyvault**\n\n Follow these instructions to create access policy in Keyvault.\n 1. Go to keyvaults, select your keyvault, go to Access policies on left side panel, click on create.\n 2. Select all keys & secrets permissions. Click next.\n 3. In the principal section, search by application name which was generated in STEP - 2. Click next.\n\n **Note: **Ensure the Permission model in the Access Configuration of Key Vault is set to **'Vault access policy'**"
+                      "description": "**STEP 6 - Create a Keyvault**\n\n Follow these instructions to create a new Keyvault.\n 1. In the Azure portal, Go to **Key vaults** and click on Create.\n 2. Select Subsciption, Resource Group and provide unique name of keyvault."
                     },
                     {
-                      "description": "**STEP 7 - Choose ONE from the following two deployment options to deploy the connector and the associated Azure Function**\n\n>**IMPORTANT:** Before deploying the Vectra data connector, have the Workspace ID and Workspace Primary Key (can be copied from the following) readily available.., as well as the Vectra API Authorization Credentials",
-                      "instructions": [
-                        {
-                          "parameters": {
-                            "fillWith": [
-                              "WorkspaceId"
-                            ],
-                            "label": "Workspace ID"
-                          },
-                          "type": "CopyableLabel"
-                        },
-                        {
-                          "parameters": {
-                            "fillWith": [
-                              "PrimaryKey"
-                            ],
-                            "label": "Primary Key"
-                          },
-                          "type": "CopyableLabel"
-                        }
-                      ]
+                      "description": "**STEP 7 - Create Access Policy in Keyvault**\n\n Follow these instructions to create access policy in Keyvault.\n 1. Go to keyvaults, select your keyvault, go to Access policies on left side panel, click on create.\n 2. Select all keys & secrets permissions. Click next.\n 3. In the principal section, search by application name which was generated in STEP - 2. Click next.\n\n **Note: **Ensure the Permission model in the Access Configuration of Key Vault is set to **'Vault access policy'**"
+                    },
+                    {
+                      "description": "**STEP 8 - Choose ONE from the following two deployment options to deploy the connector and the associated Azure Function**\n\n>**IMPORTANT:** Before deploying the Vectra data connector, have the Vectra API Authorization Credentials readily available.."
                     },
                     {
                       "description": "Use this method for automated deployment of the Vectra connector.\n\n1. Click the **Deploy to Azure** button below. \n\n\t[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Ffenil-savani%2FData-Connectors%2Frefs%2Fheads%2Fmain%2Fazuredeploy_Connector_VectraXDR_AzureFunction.json) [![Deploy to Azure Gov](https://aka.ms/deploytoazuregovbutton)](https://aka.ms/sentinel-VectraXDRAPI-azuredeploy-gov)\n2. Select the preferred **Subscription**, **Resource Group** and **Location**. \n3. Enter the below information : \n\t\tFunction Name \n\t\tWorkspace ID \n\t\tWorkspace Key \n\t\tVectra Base URL (https://<vectra-portal-url>) \n\t\tVectra Client Id - Health \n\t\tVectra Client Secret Key - Health \n\t\tVectra Client Id - Entity Scoring \n\t\tVectra Client Secret - Entity Scoring \n\t\tVectra Client Id - Detections \n\t\tVectra Client Secret - Detections \n\t\tVectra Client Id - Audits \n\t\tVectra Client Secret - Audits \n\t\tVectra Client Id - Lockdown \n\t\tVectra Client Secret - Lockdown \n\t\tVectra Client Id - Host-Entity \n\t\tVectra Client Secret - Host-Entity \n\t\tVectra Client Id - Account-Entity \n\t\tVectra Client Secret - Account-Entity \n\t\tKey Vault Name \n\t\tAzure Client Id \n\t\tAzure Client Secret \n\t\tTenant Id \n\t\tStartTime (in MM/DD/YYYY HH:MM:SS Format) \n\t\tInclude Score Decrease \n\t\tAudits Table Name \n\t\tDetections Table Name \n\t\tEntity Scoring Table Name \n\t\tLockdown Table Name \n\t\tHealth Table Name \n\t\tEntities Table Name \n\t\tLog Level (Default: INFO) \n\t\tLockdown Schedule \n\t\tHealth Schedule \n\t\tDetections Schedule \n\t\tAudits Schedule \n\t\tEntity Scoring Schedule \n\t\tEntities Schedule \n4. Mark the checkbox labeled **I agree to the terms and conditions stated above**. \n5. Click **Purchase** to deploy.",
@@ -829,36 +816,19 @@
               "description": "**STEP 3 - Add a client secret for application in Microsoft Entra ID**\n\n Sometimes called an application password, a client secret is a string value required for the execution of Vectra Data Connector. Follow the steps in this section to create a new Client Secret:\n 1. In the Azure portal, in **App registrations**, select your application.\n 2. Select **Certificates & secrets > Client secrets > New client secret**.\n 3. Add a description for your client secret.\n 4. Select an expiration for the secret or specify a custom lifetime. Limit is 24 months.\n 5. Select **Add**. \n 6. *Record the secret's value for use in your client application code. This secret value is never displayed again after you leave this page.* The secret value is required as configuration parameter for the execution of Vectra Data Connector. \n\n> **Reference link:** [https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret](https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-client-secret)"
             },
             {
-              "description": "**STEP 4 - Assign role of Contributor to application in Microsoft Entra ID**\n\n Follow the steps in this section to assign the role:\n 1. In the Azure portal, Go to **Resource Group** and select your resource group.\n 2. Go to **Access control (IAM)** from left panel.\n 3. Click on **Add**, and then select **Add role assignment**.\n 4. Select **Contributor** as role and click on next.\n 5. In **Assign access to**, select `User, group, or service principal`.\n 6. Click on **add members** and type **your app name** that you have created and select it.\n 7. Now click on **Review + assign** and then again click on **Review + assign**. \n\n> **Reference link:** [https://learn.microsoft.com/azure/role-based-access-control/role-assignments-portal](https://learn.microsoft.com/azure/role-based-access-control/role-assignments-portal)"
+              "description": "**STEP 4 - Get Object ID of your application in Microsoft Entra ID**\n\n After creating your app registration, follow the steps in this section to get Object ID:\n 1. Go to **Microsoft Entra ID**.\n 2. Select **Enterprise applications** from the left menu.\n 3. Find your newly created application in the list (you can search by the name you provided).\n 4. Click on the application.\n 5. On the overview page, copy the **Object ID**. This is the **AzureEntraObjectId** needed for your ARM template role assignment.\n"
             },
             {
-              "description": "**STEP 5 - Create a Keyvault**\n\n Follow these instructions to create a new Keyvault.\n 1. In the Azure portal, Go to **Key vaults** and click on Create.\n 2. Select Subsciption, Resource Group and provide unique name of keyvault."
+              "description": "**STEP 5 - Assign role of Contributor to application in Microsoft Entra ID**\n\n Follow the steps in this section to assign the role:\n 1. In the Azure portal, Go to **Resource Group** and select your resource group.\n 2. Go to **Access control (IAM)** from left panel.\n 3. Click on **Add**, and then select **Add role assignment**.\n 4. Select **Contributor** as role and click on next.\n 5. In **Assign access to**, select `User, group, or service principal`.\n 6. Click on **add members** and type **your app name** that you have created and select it.\n 7. Now click on **Review + assign** and then again click on **Review + assign**. \n\n> **Reference link:** [https://learn.microsoft.com/azure/role-based-access-control/role-assignments-portal](https://learn.microsoft.com/azure/role-based-access-control/role-assignments-portal)"
             },
             {
-              "description": "**STEP 6 - Create Access Policy in Keyvault**\n\n Follow these instructions to create access policy in Keyvault.\n 1. Go to keyvaults, select your keyvault, go to Access policies on left side panel, click on create.\n 2. Select all keys & secrets permissions. Click next.\n 3. In the principal section, search by application name which was generated in STEP - 2. Click next.\n\n **Note: **Ensure the Permission model in the Access Configuration of Key Vault is set to **'Vault access policy'**"
+              "description": "**STEP 6 - Create a Keyvault**\n\n Follow these instructions to create a new Keyvault.\n 1. In the Azure portal, Go to **Key vaults** and click on Create.\n 2. Select Subsciption, Resource Group and provide unique name of keyvault."
             },
             {
-              "description": "**STEP 7 - Choose ONE from the following two deployment options to deploy the connector and the associated Azure Function**\n\n>**IMPORTANT:** Before deploying the Vectra data connector, have the Workspace ID and Workspace Primary Key (can be copied from the following) readily available.., as well as the Vectra API Authorization Credentials",
-              "instructions": [
-                {
-                  "parameters": {
-                    "fillWith": [
-                      "WorkspaceId"
-                    ],
-                    "label": "Workspace ID"
-                  },
-                  "type": "CopyableLabel"
-                },
-                {
-                  "parameters": {
-                    "fillWith": [
-                      "PrimaryKey"
-                    ],
-                    "label": "Primary Key"
-                  },
-                  "type": "CopyableLabel"
-                }
-              ]
+              "description": "**STEP 7 - Create Access Policy in Keyvault**\n\n Follow these instructions to create access policy in Keyvault.\n 1. Go to keyvaults, select your keyvault, go to Access policies on left side panel, click on create.\n 2. Select all keys & secrets permissions. Click next.\n 3. In the principal section, search by application name which was generated in STEP - 2. Click next.\n\n **Note: **Ensure the Permission model in the Access Configuration of Key Vault is set to **'Vault access policy'**"
+            },
+            {
+              "description": "**STEP 8 - Choose ONE from the following two deployment options to deploy the connector and the associated Azure Function**\n\n>**IMPORTANT:** Before deploying the Vectra data connector, have the Vectra API Authorization Credentials readily available.."
             },
             {
               "description": "Use this method for automated deployment of the Vectra connector.\n\n1. Click the **Deploy to Azure** button below. \n\n\t[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Ffenil-savani%2FData-Connectors%2Frefs%2Fheads%2Fmain%2Fazuredeploy_Connector_VectraXDR_AzureFunction.json) [![Deploy to Azure Gov](https://aka.ms/deploytoazuregovbutton)](https://aka.ms/sentinel-VectraXDRAPI-azuredeploy-gov)\n2. Select the preferred **Subscription**, **Resource Group** and **Location**. \n3. Enter the below information : \n\t\tFunction Name \n\t\tWorkspace ID \n\t\tWorkspace Key \n\t\tVectra Base URL (https://<vectra-portal-url>) \n\t\tVectra Client Id - Health \n\t\tVectra Client Secret Key - Health \n\t\tVectra Client Id - Entity Scoring \n\t\tVectra Client Secret - Entity Scoring \n\t\tVectra Client Id - Detections \n\t\tVectra Client Secret - Detections \n\t\tVectra Client Id - Audits \n\t\tVectra Client Secret - Audits \n\t\tVectra Client Id - Lockdown \n\t\tVectra Client Secret - Lockdown \n\t\tVectra Client Id - Host-Entity \n\t\tVectra Client Secret - Host-Entity \n\t\tVectra Client Id - Account-Entity \n\t\tVectra Client Secret - Account-Entity \n\t\tKey Vault Name \n\t\tAzure Client Id \n\t\tAzure Client Secret \n\t\tTenant Id \n\t\tStartTime (in MM/DD/YYYY HH:MM:SS Format) \n\t\tInclude Score Decrease \n\t\tAudits Table Name \n\t\tDetections Table Name \n\t\tEntity Scoring Table Name \n\t\tLockdown Table Name \n\t\tHealth Table Name \n\t\tEntities Table Name \n\t\tLog Level (Default: INFO) \n\t\tLockdown Schedule \n\t\tHealth Schedule \n\t\tDetections Schedule \n\t\tAudits Schedule \n\t\tEntity Scoring Schedule \n\t\tEntities Schedule \n4. Mark the checkbox labeled **I agree to the terms and conditions stated above**. \n5. Click **Purchase** to deploy.",
@@ -889,7 +859,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "VectraDetections Data Parser with template version 3.2.2",
+        "description": "VectraDetections Data Parser with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('parserObject1').parserVersion1]",
@@ -1021,7 +991,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "VectraAudits Data Parser with template version 3.2.2",
+        "description": "VectraAudits Data Parser with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('parserObject2').parserVersion2]",
@@ -1153,7 +1123,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "VectraEntityScoring Data Parser with template version 3.2.2",
+        "description": "VectraEntityScoring Data Parser with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('parserObject3').parserVersion3]",
@@ -1285,7 +1255,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "VectraHealth Data Parser with template version 3.2.2",
+        "description": "VectraHealth Data Parser with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('parserObject4').parserVersion4]",
@@ -1417,7 +1387,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "VectraLockdown Data Parser with template version 3.2.2",
+        "description": "VectraLockdown Data Parser with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('parserObject5').parserVersion5]",
@@ -1549,7 +1519,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "Create_Incident_Based_On_Tag_For_Account_Entity_AnalyticalRules Analytics Rule with template version 3.2.2",
+        "description": "Create_Incident_Based_On_Tag_For_Account_Entity_AnalyticalRules Analytics Rule with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('analyticRuleObject1').analyticRuleVersion1]",
@@ -1577,10 +1547,10 @@
                 "status": "Available",
                 "requiredDataConnectors": [
                   {
-                    "connectorId": "VectraXDR",
                     "dataTypes": [
                       "Entities_Data_CL"
-                    ]
+                    ],
+                    "connectorId": "VectraXDR"
                   }
                 ],
                 "tactics": [
@@ -1604,28 +1574,28 @@
                   "aggregationKind": "AlertPerResult"
                 },
                 "customDetails": {
-                  "attack_profile": "attack_profile",
-                  "ip_address": "ip",
-                  "tags": "tags",
                   "entity_type": "entity_type",
-                  "entity_id": "id"
+                  "attack_profile": "attack_profile",
+                  "entity_id": "[variables('_id')]",
+                  "tags": "tags",
+                  "ip_address": "ip"
                 },
                 "alertDetailsOverride": {
-                  "alertDescriptionFormat": "An incident has been escalated for Vectra AI entity {{name}} that is presenting an urgency score of {{urgency_score}}",
-                  "alertDisplayNameFormat": "Vectra AI Incident- {{name}}"
+                  "alertDisplayNameFormat": "Vectra AI Incident- {{name}}",
+                  "alertDescriptionFormat": "An incident has been escalated for Vectra AI entity {{name}} that is presenting an urgency score of {{urgency_score}}"
                 },
                 "incidentConfiguration": {
                   "groupingConfiguration": {
-                    "groupByAlertDetails": [
-                      "DisplayName"
-                    ],
+                    "enabled": true,
                     "groupByEntities": [
                       "Account"
                     ],
-                    "enabled": true,
-                    "lookbackDuration": "P7D",
                     "reopenClosedIncident": false,
-                    "matchingMethod": "AllEntities"
+                    "groupByAlertDetails": [
+                      "DisplayName"
+                    ],
+                    "matchingMethod": "AllEntities",
+                    "lookbackDuration": "P7D"
                   },
                   "createIncident": true
                 }
@@ -1682,7 +1652,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "Create_Incident_Based_On_Tag_For_Host_Entity_AnalyticalRules Analytics Rule with template version 3.2.2",
+        "description": "Create_Incident_Based_On_Tag_For_Host_Entity_AnalyticalRules Analytics Rule with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('analyticRuleObject2').analyticRuleVersion2]",
@@ -1710,10 +1680,10 @@
                 "status": "Available",
                 "requiredDataConnectors": [
                   {
-                    "connectorId": "VectraXDR",
                     "dataTypes": [
                       "Entities_Data_CL"
-                    ]
+                    ],
+                    "connectorId": "VectraXDR"
                   }
                 ],
                 "tactics": [
@@ -1737,34 +1707,34 @@
                   "aggregationKind": "AlertPerResult"
                 },
                 "customDetails": {
-                  "attack_profile": "attack_profile",
-                  "ip_address": "ip",
-                  "tags": "tags",
                   "entity_type": "entity_type",
-                  "entity_id": "id"
+                  "attack_profile": "attack_profile",
+                  "entity_id": "[variables('_id')]",
+                  "tags": "tags",
+                  "ip_address": "ip"
                 },
                 "alertDetailsOverride": {
                   "alertDescriptionFormat": "An incident has been escalated for Vectra AI entity {{name}} that is presenting an urgency score of {{urgency_score}}",
-                  "alertDisplayNameFormat": "Vectra AI Incident- {{name}}",
                   "alertDynamicProperties": [
                     {
                       "alertProperty": "AlertLink",
                       "value": "url"
                     }
-                  ]
+                  ],
+                  "alertDisplayNameFormat": "Vectra AI Incident- {{name}}"
                 },
                 "incidentConfiguration": {
                   "groupingConfiguration": {
-                    "groupByAlertDetails": [
-                      "DisplayName"
-                    ],
+                    "enabled": true,
                     "groupByEntities": [
                       "Host"
                     ],
-                    "enabled": true,
-                    "lookbackDuration": "P7D",
                     "reopenClosedIncident": false,
-                    "matchingMethod": "AllEntities"
+                    "groupByAlertDetails": [
+                      "DisplayName"
+                    ],
+                    "matchingMethod": "AllEntities",
+                    "lookbackDuration": "P7D"
                   },
                   "createIncident": true
                 }
@@ -1821,7 +1791,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "Priority_Host_AnalyticalRules Analytics Rule with template version 3.2.2",
+        "description": "Priority_Host_AnalyticalRules Analytics Rule with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('analyticRuleObject3').analyticRuleVersion3]",
@@ -1849,10 +1819,10 @@
                 "status": "Available",
                 "requiredDataConnectors": [
                   {
-                    "connectorId": "VectraXDR",
                     "dataTypes": [
                       "Entities_Data_CL"
-                    ]
+                    ],
+                    "connectorId": "VectraXDR"
                   }
                 ],
                 "tactics": [
@@ -1876,28 +1846,28 @@
                   "aggregationKind": "AlertPerResult"
                 },
                 "customDetails": {
-                  "attack_profile": "attack_profile",
-                  "ip_address": "ip",
-                  "tags": "tags",
                   "entity_type": "entity_type",
-                  "entity_id": "id"
+                  "attack_profile": "attack_profile",
+                  "entity_id": "[variables('_id')]",
+                  "tags": "tags",
+                  "ip_address": "ip"
                 },
                 "alertDetailsOverride": {
                   "alertDescriptionFormat": "An incident has been generated for Vectra AI entity {{name}} that is presenting an urgency score of {{urgency_score}}.",
-                  "alertDisplayNameFormat": "Vectra AI Incident- {{name}}",
                   "alertDynamicProperties": [
                     {
                       "alertProperty": "AlertLink",
                       "value": "url"
                     }
-                  ]
+                  ],
+                  "alertDisplayNameFormat": "Vectra AI Incident- {{name}}"
                 },
                 "incidentConfiguration": {
                   "groupingConfiguration": {
                     "enabled": true,
-                    "reopenClosedIncident": true,
                     "lookbackDuration": "P7D",
-                    "matchingMethod": "AllEntities"
+                    "matchingMethod": "AllEntities",
+                    "reopenClosedIncident": true
                   },
                   "createIncident": true
                 }
@@ -1954,7 +1924,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "Priority_Account_AnalyticalRules Analytics Rule with template version 3.2.2",
+        "description": "Priority_Account_AnalyticalRules Analytics Rule with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('analyticRuleObject4').analyticRuleVersion4]",
@@ -1982,10 +1952,10 @@
                 "status": "Available",
                 "requiredDataConnectors": [
                   {
-                    "connectorId": "VectraXDR",
                     "dataTypes": [
                       "Entities_Data_CL"
-                    ]
+                    ],
+                    "connectorId": "VectraXDR"
                   }
                 ],
                 "tactics": [
@@ -2009,28 +1979,28 @@
                   "aggregationKind": "AlertPerResult"
                 },
                 "customDetails": {
-                  "attack_profile": "attack_profile",
-                  "ip_address": "ip",
-                  "tags": "tags",
                   "entity_type": "entity_type",
-                  "entity_id": "id"
+                  "attack_profile": "attack_profile",
+                  "entity_id": "[variables('_id')]",
+                  "tags": "tags",
+                  "ip_address": "ip"
                 },
                 "alertDetailsOverride": {
                   "alertDescriptionFormat": "An incident has been generated for Vectra AI entity {{name}} that is presenting an urgency score of {{urgency_score}}.",
-                  "alertDisplayNameFormat": "Vectra AI Incident- {{name}}",
                   "alertDynamicProperties": [
                     {
                       "alertProperty": "AlertLink",
                       "value": "url"
                     }
-                  ]
+                  ],
+                  "alertDisplayNameFormat": "Vectra AI Incident- {{name}}"
                 },
                 "incidentConfiguration": {
                   "groupingConfiguration": {
                     "enabled": true,
-                    "reopenClosedIncident": true,
                     "lookbackDuration": "P7D",
-                    "matchingMethod": "AllEntities"
+                    "matchingMethod": "AllEntities",
+                    "reopenClosedIncident": true
                   },
                   "createIncident": true
                 }
@@ -2087,7 +2057,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "Detection_Host_AnalyticalRules Analytics Rule with template version 3.2.2",
+        "description": "Detection_Host_AnalyticalRules Analytics Rule with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('analyticRuleObject5').analyticRuleVersion5]",
@@ -2115,10 +2085,10 @@
                 "status": "Available",
                 "requiredDataConnectors": [
                   {
-                    "connectorId": "VectraXDR",
                     "dataTypes": [
                       "Detections_Data_CL"
-                    ]
+                    ],
+                    "connectorId": "VectraXDR"
                   }
                 ],
                 "tactics": [
@@ -2142,28 +2112,28 @@
                   "aggregationKind": "AlertPerResult"
                 },
                 "customDetails": {
-                  "mitre_techniques": "mitre",
-                  "tags": "tags",
                   "entity_type": "entity_type",
-                  "entity_id": "entity_id",
+                  "mitre_techniques": "mitre",
+                  "entity_id": "[variables('_entity_id')]",
+                  "tags": "tags",
                   "detection_id": "detection_id"
                 },
                 "alertDetailsOverride": {
                   "alertDescriptionFormat": "Vectra AI has detected {{category}} - {{detection}} on entity {{entity_uid}}.",
-                  "alertDisplayNameFormat": "Vectra AI Detection- {{detection}}",
                   "alertDynamicProperties": [
                     {
                       "alertProperty": "AlertLink",
                       "value": "detection_url"
                     }
-                  ]
+                  ],
+                  "alertDisplayNameFormat": "Vectra AI Detection- {{detection}}"
                 },
                 "incidentConfiguration": {
                   "groupingConfiguration": {
                     "enabled": false,
-                    "reopenClosedIncident": false,
                     "lookbackDuration": "PT5H",
-                    "matchingMethod": "AllEntities"
+                    "matchingMethod": "AllEntities",
+                    "reopenClosedIncident": false
                   },
                   "createIncident": false
                 }
@@ -2220,7 +2190,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "Detection_Account_AnalyticalRules Analytics Rule with template version 3.2.2",
+        "description": "Detection_Account_AnalyticalRules Analytics Rule with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('analyticRuleObject6').analyticRuleVersion6]",
@@ -2248,10 +2218,10 @@
                 "status": "Available",
                 "requiredDataConnectors": [
                   {
-                    "connectorId": "VectraXDR",
                     "dataTypes": [
                       "Detections_Data_CL"
-                    ]
+                    ],
+                    "connectorId": "VectraXDR"
                   }
                 ],
                 "tactics": [
@@ -2275,28 +2245,28 @@
                   "aggregationKind": "AlertPerResult"
                 },
                 "customDetails": {
-                  "mitre_techniques": "mitre",
-                  "tags": "tags",
                   "entity_type": "entity_type",
-                  "entity_id": "entity_id",
+                  "mitre_techniques": "mitre",
+                  "entity_id": "[variables('_entity_id')]",
+                  "tags": "tags",
                   "detection_id": "detection_id"
                 },
                 "alertDetailsOverride": {
                   "alertDescriptionFormat": "Vectra AI has detected {{category}} - {{detection} on entity {{entity_uid}}.",
-                  "alertDisplayNameFormat": "Vectra AI Detection-  {{detection}}",
                   "alertDynamicProperties": [
                     {
                       "alertProperty": "AlertLink",
                       "value": "detection_url"
                     }
-                  ]
+                  ],
+                  "alertDisplayNameFormat": "Vectra AI Detection-  {{detection}}"
                 },
                 "incidentConfiguration": {
                   "groupingConfiguration": {
                     "enabled": false,
-                    "reopenClosedIncident": false,
                     "lookbackDuration": "PT5H",
-                    "matchingMethod": "AllEntities"
+                    "matchingMethod": "AllEntities",
+                    "reopenClosedIncident": false
                   },
                   "createIncident": false
                 }
@@ -2353,7 +2323,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "Defender_Alert_Evidence_AnalyticalRules Analytics Rule with template version 3.2.2",
+        "description": "Defender_Alert_Evidence_AnalyticalRules Analytics Rule with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('analyticRuleObject7').analyticRuleVersion7]",
@@ -2379,7 +2349,20 @@
                 "triggerOperator": "GreaterThan",
                 "triggerThreshold": 0,
                 "status": "Available",
-                "requiredDataConnectors": [],
+                "requiredDataConnectors": [
+                  {
+                    "dataTypes": [
+                      "AlertEvidence"
+                    ],
+                    "connectorId": "MicrosoftThreatProtection"
+                  }
+                ],
+                "tactics": [
+                  "Persistence"
+                ],
+                "techniques": [
+                  "T1546"
+                ],
                 "entityMappings": [
                   {
                     "entityType": "Account",
@@ -2415,9 +2398,9 @@
                 "incidentConfiguration": {
                   "groupingConfiguration": {
                     "enabled": false,
-                    "reopenClosedIncident": false,
                     "lookbackDuration": "PT5H",
-                    "matchingMethod": "AllEntities"
+                    "matchingMethod": "AllEntities",
+                    "reopenClosedIncident": false
                   },
                   "createIncident": false
                 }
@@ -2474,7 +2457,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "VectraXDR Workbook with template version 3.2.2",
+        "description": "VectraXDR Workbook with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('workbookVersion1')]",
@@ -2578,7 +2561,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "VectraAddNoteToEntity Playbook with template version 3.2.2",
+        "description": "VectraAddNoteToEntity Playbook with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('playbookVersion1')]",
@@ -3380,7 +3363,7 @@
                           {
                             "name": "api_version",
                             "type": "string",
-                            "value": "v3.3"
+                            "value": "v3.4"
                           }
                         ]
                       }
@@ -4070,7 +4053,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "VectraAddTagToEntityAllDetections Playbook with template version 3.2.2",
+        "description": "VectraAddTagToEntityAllDetections Playbook with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('playbookVersion2')]",
@@ -5065,7 +5048,7 @@
                           {
                             "name": "api_version",
                             "type": "string",
-                            "value": "v3.3"
+                            "value": "v3.4"
                           }
                         ]
                       }
@@ -5756,49 +5739,9 @@
                                           }
                                         },
                                         "required": [
-                                          "summary",
-                                          "data_source",
-                                          "sensor",
                                           "detection",
-                                          "filtered_by_ai",
-                                          "filtered_by_user",
-                                          "is_custom_model",
-                                          "custom_detection",
-                                          "is_targeting_key_asset",
-                                          "c_score",
-                                          "note_modified_timestamp",
-                                          "note",
-                                          "description",
-                                          "note_modified_by",
-                                          "triage_rule_id",
-                                          "filtered_by_rule",
-                                          "assigned_date",
-                                          "category",
-                                          "src_account",
-                                          "src_ip",
-                                          "targets_key_asset",
-                                          "is_marked_custom",
-                                          "notes",
-                                          "groups",
-                                          "tags",
-                                          "sensor_name",
-                                          "last_timestamp",
-                                          "detection_url",
                                           "detection_category",
-                                          "assigned_to",
-                                          "t_score",
-                                          "state",
-                                          "detection_type",
-                                          "first_timestamp",
-                                          "id",
-                                          "created_timestamp",
-                                          "certainty",
-                                          "url",
-                                          "threat",
-                                          "is_triaged",
-                                          "src_host",
-                                          "type",
-                                          "grouped_details"
+                                          "id"
                                         ],
                                         "type": "object"
                                       },
@@ -6199,7 +6142,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "VectraAddTagToEntity Playbook with template version 3.2.2",
+        "description": "VectraAddTagToEntity Playbook with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('playbookVersion3')]",
@@ -6665,7 +6608,7 @@
                           {
                             "name": "api_version",
                             "type": "string",
-                            "value": "v3.3"
+                            "value": "v3.4"
                           }
                         ]
                       }
@@ -7140,7 +7083,7 @@
                             "queries": {
                               "type": "@variables('entity_type')"
                             },
-                            "uri": "@{variables('base_url')}/api/v3.3/tagging/entity/@{int(variables('entity_id'))}"
+                            "uri": "@{variables('base_url')}/api/@{variables('api_version')}/tagging/entity/@{int(variables('entity_id'))}"
                           }
                         }
                       },
@@ -7384,7 +7327,7 @@
                             "queries": {
                               "type": "@variables('entity_type')"
                             },
-                            "uri": "@{variables('base_url')}/api/v3.3/tagging/entity/@{int(variables('entity_id'))}"
+                            "uri": "@{variables('base_url')}/api/@{variables('api_version')}/tagging/entity/@{int(variables('entity_id'))}"
                           }
                         }
                       },
@@ -7601,7 +7544,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "VectraAddTagToEntitySelectedDetections Playbook with template version 3.2.2",
+        "description": "VectraAddTagToEntitySelectedDetections Playbook with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('playbookVersion4')]",
@@ -8423,7 +8366,7 @@
                           {
                             "name": "api_version",
                             "type": "string",
-                            "value": "v3.3"
+                            "value": "v3.4"
                           }
                         ]
                       }
@@ -9168,49 +9111,9 @@
                                           }
                                         },
                                         "required": [
-                                          "summary",
-                                          "data_source",
-                                          "sensor",
                                           "detection",
-                                          "filtered_by_ai",
-                                          "filtered_by_user",
-                                          "is_custom_model",
-                                          "custom_detection",
-                                          "is_targeting_key_asset",
-                                          "c_score",
-                                          "note_modified_timestamp",
-                                          "note",
-                                          "description",
-                                          "note_modified_by",
-                                          "triage_rule_id",
-                                          "filtered_by_rule",
-                                          "assigned_date",
-                                          "category",
-                                          "src_account",
-                                          "src_ip",
-                                          "targets_key_asset",
-                                          "is_marked_custom",
-                                          "notes",
-                                          "groups",
-                                          "tags",
-                                          "sensor_name",
-                                          "last_timestamp",
-                                          "detection_url",
                                           "detection_category",
-                                          "assigned_to",
-                                          "t_score",
-                                          "state",
-                                          "detection_type",
-                                          "first_timestamp",
-                                          "id",
-                                          "created_timestamp",
-                                          "certainty",
-                                          "url",
-                                          "threat",
-                                          "is_triaged",
-                                          "src_host",
-                                          "type",
-                                          "grouped_details"
+                                          "id"
                                         ],
                                         "type": "object"
                                       },
@@ -9613,7 +9516,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "VectraDynamicAssignMemberToGroup Playbook with template version 3.2.2",
+        "description": "VectraDynamicAssignMemberToGroup Playbook with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('playbookVersion5')]",
@@ -9875,7 +9778,7 @@
                           {
                             "name": "api_version",
                             "type": "string",
-                            "value": "v3.3"
+                            "value": "v3.4"
                           }
                         ]
                       }
@@ -10975,7 +10878,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "VectraAssignDynamicUserToEntity Playbook with template version 3.2.2",
+        "description": "VectraAssignDynamicUserToEntity Playbook with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('playbookVersion6')]",
@@ -12806,7 +12709,7 @@
                           {
                             "name": "api_version",
                             "type": "string",
-                            "value": "v3.3"
+                            "value": "v3.4"
                           }
                         ]
                       }
@@ -13351,7 +13254,7 @@
                                         "inputs": {
                                           "name": "user",
                                           "value": {
-                                            "title": "@{items('For_Each_User')?['id']} - @{items('For_Each_User')?['username']} - @{items('For_Each_User')?['role']}",
+                                            "title": "@{items('For_Each_User')?['id']} - @{items('For_Each_User')?['name']} - @{items('For_Each_User')?['role']}",
                                             "value": "@items('For_Each_User')?['id']"
                                           }
                                         }
@@ -13408,12 +13311,6 @@
                                           "id": {
                                             "type": "integer"
                                           },
-                                          "last_login": {
-                                            "type": [
-                                              "string",
-                                              "null"
-                                            ]
-                                          },
                                           "last_login_timestamp": {
                                             "type": [
                                               "string",
@@ -13423,17 +13320,19 @@
                                           "role": {
                                             "type": "string"
                                           },
-                                          "username": {
-                                            "type": "string"
+                                          "name": {
+                                            "type": [
+                                              "string",
+                                              "null"
+                                            ]
                                           }
                                         },
                                         "required": [
                                           "id",
-                                          "username",
+                                          "name",
                                           "email",
                                           "role",
-                                          "last_login_timestamp",
-                                          "last_login"
+                                          "last_login_timestamp"
                                         ],
                                         "type": "object"
                                       },
@@ -13844,7 +13743,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "VectraStaticAssignMemberToGroup Playbook with template version 3.2.2",
+        "description": "VectraStaticAssignMemberToGroup Playbook with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('playbookVersion7')]",
@@ -13994,7 +13893,7 @@
                           {
                             "name": "api_version",
                             "type": "string",
-                            "value": "v3.3"
+                            "value": "v3.4"
                           }
                         ]
                       }
@@ -14504,7 +14403,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "VectraAssignStaticUserToEntity Playbook with template version 3.2.2",
+        "description": "VectraAssignStaticUserToEntity Playbook with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('playbookVersion8')]",
@@ -16214,7 +16113,7 @@
                           {
                             "name": "api_version",
                             "type": "string",
-                            "value": "v3.3"
+                            "value": "v3.4"
                           }
                         ]
                       }
@@ -16687,7 +16586,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "VectraDecorateIncidentBasedOnTag Playbook with template version 3.2.2",
+        "description": "VectraDecorateIncidentBasedOnTag Playbook with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('playbookVersion9')]",
@@ -16900,7 +16799,7 @@
                           {
                             "name": "api_version",
                             "type": "string",
-                            "value": "v3.3"
+                            "value": "v3.4"
                           }
                         ]
                       }
@@ -17546,7 +17445,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "VectraDecorateIncidentBasedOnTagAndNotify Playbook with template version 3.2.2",
+        "description": "VectraDecorateIncidentBasedOnTagAndNotify Playbook with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('playbookVersion10')]",
@@ -17774,7 +17673,7 @@
                           {
                             "name": "api_version",
                             "type": "string",
-                            "value": "v3.3"
+                            "value": "v3.4"
                           }
                         ]
                       }
@@ -18483,7 +18382,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "VectraDynamicResolveAssignment Playbook with template version 3.2.2",
+        "description": "VectraDynamicResolveAssignment Playbook with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('playbookVersion11')]",
@@ -20236,7 +20135,7 @@
                           {
                             "name": "api_version",
                             "type": "string",
-                            "value": "v3.3"
+                            "value": "v3.4"
                           }
                         ]
                       }
@@ -21113,49 +21012,8 @@
                                           }
                                         },
                                         "required": [
-                                          "summary",
-                                          "data_source",
-                                          "sensor",
-                                          "detection",
-                                          "filtered_by_ai",
-                                          "filtered_by_user",
-                                          "is_custom_model",
-                                          "custom_detection",
-                                          "is_targeting_key_asset",
-                                          "c_score",
-                                          "note_modified_timestamp",
-                                          "note",
-                                          "description",
-                                          "note_modified_by",
-                                          "triage_rule_id",
-                                          "filtered_by_rule",
-                                          "assigned_date",
-                                          "category",
-                                          "src_account",
-                                          "src_ip",
-                                          "targets_key_asset",
-                                          "is_marked_custom",
-                                          "notes",
-                                          "groups",
-                                          "tags",
-                                          "sensor_name",
-                                          "last_timestamp",
-                                          "detection_url",
-                                          "detection_category",
-                                          "assigned_to",
-                                          "t_score",
-                                          "state",
-                                          "detection_type",
-                                          "first_timestamp",
                                           "id",
-                                          "created_timestamp",
-                                          "certainty",
-                                          "url",
-                                          "threat",
-                                          "is_triaged",
-                                          "src_host",
-                                          "type",
-                                          "grouped_details"
+                                          "detection"
                                         ],
                                         "type": "object"
                                       },
@@ -22151,7 +22009,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "VectraGenerateAccessToken Playbook with template version 3.2.2",
+        "description": "VectraGenerateAccessToken Playbook with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('playbookVersion12')]",
@@ -23152,7 +23010,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "VectraIncidentTimelineUpdate Playbook with template version 3.2.2",
+        "description": "VectraIncidentTimelineUpdate Playbook with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('playbookVersion13')]",
@@ -23634,7 +23492,7 @@
             }
           ],
           "metadata": {
-            "title": "VectraIncidentTimelineUpdate",
+            "title": "Vectra Incident Timeline Update",
             "description": "This playbook will update the incident timeline by keeping most recent alerts and adding most recent detections and defender alerts from entities timeline to the incident timeline.",
             "prerequisites": [
               "1. The Vectra XDR data connector should be configured to send appropriate alerts to Microsoft Sentinel.",
@@ -23723,7 +23581,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "VectraMarkDetectionsAsFixed Playbook with template version 3.2.2",
+        "description": "VectraMarkDetectionsAsFixed Playbook with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('playbookVersion14')]",
@@ -24153,7 +24011,7 @@
                           {
                             "name": "api_version",
                             "type": "string",
-                            "value": "v3.3"
+                            "value": "v3.4"
                           }
                         ]
                       }
@@ -24936,49 +24794,8 @@
                                           }
                                         },
                                         "required": [
-                                          "summary",
-                                          "data_source",
-                                          "sensor",
-                                          "detection",
-                                          "filtered_by_ai",
-                                          "filtered_by_user",
-                                          "is_custom_model",
-                                          "custom_detection",
-                                          "is_targeting_key_asset",
-                                          "c_score",
-                                          "note_modified_timestamp",
-                                          "note",
-                                          "description",
-                                          "note_modified_by",
-                                          "triage_rule_id",
-                                          "filtered_by_rule",
-                                          "assigned_date",
-                                          "category",
-                                          "src_account",
-                                          "src_ip",
-                                          "targets_key_asset",
-                                          "is_marked_custom",
-                                          "notes",
-                                          "groups",
-                                          "tags",
-                                          "sensor_name",
-                                          "last_timestamp",
-                                          "detection_url",
-                                          "detection_category",
-                                          "assigned_to",
-                                          "t_score",
-                                          "state",
-                                          "detection_type",
-                                          "first_timestamp",
                                           "id",
-                                          "created_timestamp",
-                                          "certainty",
-                                          "url",
-                                          "threat",
-                                          "is_triaged",
-                                          "src_host",
-                                          "type",
-                                          "grouped_details"
+                                          "detection"
                                         ],
                                         "type": "object"
                                       },
@@ -25764,7 +25581,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "VectraOperateOnEntitySourceIP Playbook with template version 3.2.2",
+        "description": "VectraOperateOnEntitySourceIP Playbook with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('playbookVersion15')]",
@@ -25972,7 +25789,7 @@
                           {
                             "name": "api_version",
                             "type": "string",
-                            "value": "v3.3"
+                            "value": "v3.4"
                           }
                         ]
                       }
@@ -26751,7 +26568,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "VectraStaticResolveAssignment Playbook with template version 3.2.2",
+        "description": "VectraStaticResolveAssignment Playbook with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('playbookVersion16')]",
@@ -28176,7 +27993,7 @@
                           {
                             "name": "api_version",
                             "type": "string",
-                            "value": "v3.3"
+                            "value": "v3.4"
                           }
                         ]
                       }
@@ -28969,49 +28786,8 @@
                                           }
                                         },
                                         "required": [
-                                          "summary",
-                                          "data_source",
-                                          "sensor",
-                                          "detection",
-                                          "filtered_by_ai",
-                                          "filtered_by_user",
-                                          "is_custom_model",
-                                          "custom_detection",
-                                          "is_targeting_key_asset",
-                                          "c_score",
-                                          "note_modified_timestamp",
-                                          "note",
-                                          "description",
-                                          "note_modified_by",
-                                          "triage_rule_id",
-                                          "filtered_by_rule",
-                                          "assigned_date",
-                                          "category",
-                                          "src_account",
-                                          "src_ip",
-                                          "targets_key_asset",
-                                          "is_marked_custom",
-                                          "notes",
-                                          "groups",
-                                          "tags",
-                                          "sensor_name",
-                                          "last_timestamp",
-                                          "detection_url",
-                                          "detection_category",
-                                          "assigned_to",
-                                          "t_score",
-                                          "state",
-                                          "detection_type",
-                                          "first_timestamp",
                                           "id",
-                                          "created_timestamp",
-                                          "certainty",
-                                          "url",
-                                          "threat",
-                                          "is_triaged",
-                                          "src_host",
-                                          "type",
-                                          "grouped_details"
+                                          "detection"
                                         ],
                                         "type": "object"
                                       },
@@ -29621,7 +29397,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "VectraUpdateIncidentBasedOnTagAndNotify Playbook with template version 3.2.2",
+        "description": "VectraUpdateIncidentBasedOnTagAndNotify Playbook with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('playbookVersion17')]",
@@ -30836,7 +30612,7 @@
                           {
                             "name": "api_version",
                             "type": "string",
-                            "value": "v3.3"
+                            "value": "v3.4"
                           }
                         ]
                       }
@@ -31436,7 +31212,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "VectraCloseDetections Playbook with template version 3.2.2",
+        "description": "VectraCloseDetections Playbook with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('playbookVersion18')]",
@@ -33925,7 +33701,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "VectaDownloadPcapFileToStorage Playbook with template version 3.2.2",
+        "description": "VectaDownloadPcapFileToStorage Playbook with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('playbookVersion19')]",
@@ -36054,7 +35830,7 @@
         "[extensionResourceId(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspace')), 'Microsoft.SecurityInsights/contentPackages', variables('_solutionId'))]"
       ],
       "properties": {
-        "description": "VectraOpenClosedDetections Playbook with template version 3.2.2",
+        "description": "VectraOpenClosedDetections Playbook with template version 3.3.0",
         "mainTemplate": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
           "contentVersion": "[variables('playbookVersion20')]",
@@ -38073,7 +37849,7 @@
       "apiVersion": "2023-04-01-preview",
       "location": "[parameters('workspace-location')]",
       "properties": {
-        "version": "3.2.2",
+        "version": "3.3.0",
         "kind": "Solution",
         "contentSchemaVersion": "3.0.0",
         "displayName": "Vectra XDR",
