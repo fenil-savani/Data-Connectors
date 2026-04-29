@@ -1,0 +1,85 @@
+id: d4f8a032-6d5b-4e9f-b3a0-8c2e4f7d0b6e
+name: Google SecOps - Multi-Event Correlated Alert
+description: |
+  Detects multi-signal correlated detections from Google Chronicle with alert-level risk scores (>=40).
+  Covers two Chronicle ruleType values:
+    - MULTI_EVENT: correlates multiple events across a time window
+    - COMPOSITE_RULE: combines findings from multiple other rules into a composite signal
+  Both indicate a complex, multi-stage attack pattern. A risk_score of 40 indicates Chronicle has
+  escalated the detection to full alert status (vs. 15 for a standard RULE_DETECTION),
+  confirming the correlation is both meaningful and active.
+severity: High
+status: Available
+requiredDataConnectors:
+  - connectorId: GSDetectionAlerts
+    dataTypes:
+      - GCSDetectionAlerts_CL
+queryFrequency: 30m
+queryPeriod: 2h
+triggerOperator: gt
+triggerThreshold: 0
+tactics:
+  - LateralMovement
+  - Persistence
+  - PrivilegeEscalation
+  - CommandAndControl
+relevantTechniques:
+  - T1210
+  - T1021
+  - T1053
+  - T1055
+query: |
+  GoogleSecOpsDetectionAlerts
+  | where ruleType in ("MULTI_EVENT", "COMPOSITE_RULE")
+  | where risk_score >= 40
+  | where alert_state == "ALERTING"
+  | extend detection_window_minutes = detection_window_duration_seconds / 60
+  | sort by risk_score desc, severity_level desc
+entityMappings:
+  - entityType: IP
+    fieldMappings:
+      - identifier: Address
+        columnName: var_principal_ip
+  - entityType: IP
+    fieldMappings:
+      - identifier: Address
+        columnName: var_source_ip
+  - entityType: Host
+    fieldMappings:
+      - identifier: HostName
+        columnName: var_target_hostname
+  - entityType: Account
+    fieldMappings:
+      - identifier: Name
+        columnName: var_target_user_userid
+  - entityType: URL
+    fieldMappings:
+      - identifier: Url
+        columnName: urlBackToProduct
+customDetails:
+  RuleName: ruleName
+  RuleType: ruleType
+  Severity: severity
+  RiskScore: risk_score
+  DetectionWindowMinutes: detection_window_minutes
+  SourceIPCount: var_source_ip_count
+  PrincipalIPCount: var_principal_ip_count
+  DetectionTime: detectionTime
+alertDetailsOverride:
+  alertDisplayNameFormat: "Multi-Event Correlation: {{ruleName}} [{{severity}}]"
+  alertDescriptionFormat: "Chronicle correlated multiple events into a confirmed alert. Rule: {{ruleName}}. Detection window: {{detection_window_minutes}} minutes."
+eventGroupingSettings:
+  aggregationKind: SingleAlert
+incidentConfiguration:
+  createIncident: true
+  groupingConfiguration:
+    enabled: true
+    reopenClosedIncident: true
+    lookbackDuration: PT6H
+    matchingMethod: Selected
+    groupByEntities:
+      - IP
+    groupByAlertDetails: []
+    groupByCustomDetails: []
+version: 1.0.0
+kind: Scheduled

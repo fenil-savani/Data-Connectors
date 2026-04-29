@@ -1,0 +1,87 @@
+id: e5a9b143-7e6c-4f0a-c4b1-9d3f5a8e1c7f
+name: Google SecOps - Single-Event Critical Alert
+description: |
+  Detects SINGLE_EVENT detections from Google Chronicle (DetectionType: RULE_DETECTION) that have
+  reached alert-level risk (>=40) at HIGH or CRITICAL severity. SINGLE_EVENT rules fire on a single
+  catastrophic action requiring no multi-signal correlation — such as a known-bad IOC match, direct
+  administrative privilege abuse, or a confirmed malware execution signature.
+  Excludes MULTI_EVENT, COMPOSITE_RULE, and ENTITY_RULE types (covered by separate rules).
+  AlertState ALERTING (vs NOT_ALERTING/UNSPECIFIED) confirms Chronicle has promoted this to an
+  active incident, not merely a background detection (risk_score 40 vs 15 for a raw detection).
+severity: High
+status: Available
+requiredDataConnectors:
+  - connectorId: GSDetectionAlerts
+    dataTypes:
+      - GCSDetectionAlerts_CL
+queryFrequency: 10m
+queryPeriod: 30m
+triggerOperator: gt
+triggerThreshold: 0
+tactics:
+  - Execution
+  - CredentialAccess
+  - DefenseEvasion
+  - Impact
+relevantTechniques:
+  - T1059
+  - T1110
+  - T1562
+  - T1485
+query: |
+  GoogleSecOpsDetectionAlerts
+  | where ruleType == "SINGLE_EVENT"
+  | where severity in ("HIGH", "CRITICAL")
+  | where risk_score >= 40
+  | where alert_state == "ALERTING"
+  | extend ingestion_latency_minutes = ingestion_latency_seconds / 60
+  | sort by severity_level desc, detectionTime desc
+entityMappings:
+  - entityType: IP
+    fieldMappings:
+      - identifier: Address
+        columnName: var_source_ip
+  - entityType: IP
+    fieldMappings:
+      - identifier: Address
+        columnName: var_target_ip
+  - entityType: Host
+    fieldMappings:
+      - identifier: HostName
+        columnName: var_target_hostname
+  - entityType: Account
+    fieldMappings:
+      - identifier: Name
+        columnName: var_target_user_userid
+  - entityType: URL
+    fieldMappings:
+      - identifier: Url
+        columnName: urlBackToProduct
+customDetails:
+  RuleName: ruleName
+  RuleType: ruleType
+  Severity: severity
+  RiskScore: risk_score
+  DetectionTime: detectionTime
+  IngestionLatencyMinutes: ingestion_latency_minutes
+  Description: description
+  TargetUser: var_target_user_userid
+  SourceIP: var_source_ip
+alertDetailsOverride:
+  alertDisplayNameFormat: "Single-Event Critical: {{ruleName}} [{{severity}}]"
+  alertDescriptionFormat: "Chronicle flagged a single high-severity event as an active alert requiring immediate action. Rule: {{ruleName}}. {{description}}"
+eventGroupingSettings:
+  aggregationKind: SingleAlert
+incidentConfiguration:
+  createIncident: true
+  groupingConfiguration:
+    enabled: true
+    reopenClosedIncident: false
+    lookbackDuration: PT2H
+    matchingMethod: Selected
+    groupByEntities:
+      - Account
+    groupByAlertDetails: []
+    groupByCustomDetails: []
+version: 1.0.0
+kind: Scheduled

@@ -1,0 +1,81 @@
+id: b3e7f921-5c4a-4d8e-a2f9-7b1d3e6c9a5f
+name: Google SecOps - GCTI Threat Intelligence Finding
+description: |
+  Detects confirmed threat intelligence findings from Google Chronicle Threat Intelligence (GCTI).
+  CollectionType/DetectionType == "GCTI_FINDING" distinguishes these from standard rule-based
+  detections (RULE_DETECTION). GCTI findings are driven by Google's global threat intel corpus
+  and carry very high confidence with low false positive rates.
+  AlertState: ALERTING only (excludes NOT_ALERTING and UNSPECIFIED background findings).
+severity: High
+status: Available
+requiredDataConnectors:
+  - connectorId: GSDetectionAlerts
+    dataTypes:
+      - GCSDetectionAlerts_CL
+queryFrequency: 15m
+queryPeriod: 30m
+triggerOperator: gt
+triggerThreshold: 0
+tactics:
+  - InitialAccess
+  - Execution
+  - CommandAndControl
+  - Exfiltration
+relevantTechniques:
+  - T1078
+  - T1566
+  - T1071
+  - T1048
+query: |
+  GoogleSecOpsDetectionAlerts
+  | where DetectionType == "GCTI_FINDING"
+  | where alert_state == "ALERTING"
+  | sort by severity_level desc, risk_score desc
+entityMappings:
+  - entityType: IP
+    fieldMappings:
+      - identifier: Address
+        columnName: var_principal_ip
+  - entityType: IP
+    fieldMappings:
+      - identifier: Address
+        columnName: var_target_ip
+  - entityType: Host
+    fieldMappings:
+      - identifier: HostName
+        columnName: var_principal_hostname
+  - entityType: Account
+    fieldMappings:
+      - identifier: Name
+        columnName: var_principal_user_userid
+  - entityType: URL
+    fieldMappings:
+      - identifier: Url
+        columnName: urlBackToProduct
+customDetails:
+  RuleName: ruleName
+  RuleId: ruleId
+  Severity: severity
+  RiskScore: risk_score
+  DetectionType: DetectionType
+  DetectionTime: detectionTime
+  Description: description
+alertDetailsOverride:
+  alertDisplayNameFormat: "GCTI Finding: {{ruleName}} [{{severity}}]"
+  alertDescriptionFormat: "Google Threat Intelligence confirmed finding. Rule: {{ruleName}}. {{description}}"
+eventGroupingSettings:
+  aggregationKind: SingleAlert
+incidentConfiguration:
+  createIncident: true
+  groupingConfiguration:
+    enabled: true
+    reopenClosedIncident: false
+    lookbackDuration: PT4H
+    matchingMethod: Selected
+    groupByEntities:
+      - IP
+    groupByAlertDetails: []
+    groupByCustomDetails:
+      - RuleId
+version: 1.0.0
+kind: Scheduled
